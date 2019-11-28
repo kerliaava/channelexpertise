@@ -59,7 +59,6 @@ h3 {
 
 .sidenav {
   width: 100%;
-  position: fixed;
   z-index: 1;
   top: 0;
   background: transparent;
@@ -77,6 +76,7 @@ h3 {
   font-size: 8px;
   text-transform: uppercase;
   letter-spacing: 5px;
+  color: white;
 }
 
 .sidenav ul li a:hover {
@@ -87,7 +87,10 @@ h3 {
   z-index: 2000;
   border-style: none;
   margin: 0 auto;
+
 }
+
+
 
 #navbarSupportedContent {
   text-align: center;

@@ -659,4 +659,8 @@ footer a:hover {
     height: 100vh;
   }
 
+  .about-heading h1 {
+    font-size: 100px;
+  }
+
 }

@@ -113,7 +113,7 @@ img {
   align-items: center;
   grid-template-columns: 1;
   display: grid;
-  align-items: center;
+
 }
 
 .team-container {
@@ -126,11 +126,10 @@ img {
 .about-heading {
   display: grid;
   align-items: center;
-  padding: 60px;
 }
 
 .about-heading h1 {
-  font-size: 70px;
+  font-size: 50px;
   font-family: "Oswald", sans-serif;
 }
 
@@ -146,7 +145,6 @@ img {
 }
 
 .about-container {
-  padding: 0 70px 40px 70px;
   display: grid;
   font-size: 15px;
   text-align: center;
@@ -159,7 +157,6 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-bottom: 60px;
   text-align: center;
-  padding: 0 70px 40px 70px;
 }
 
 .team-heading {
@@ -198,11 +195,10 @@ img {
 }
 
 .clients {
-  height: 100vh;
+
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 0 60px;
 }
 
 .clients img {

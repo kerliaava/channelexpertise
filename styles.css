@@ -49,17 +49,11 @@ img {
 
 .sidenav {
   width: 100%;
-  /* Set the width of the sidebar */
   position: fixed;
-  /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1;
-  /* Stay on top */
   top: 0;
-  /* Stay at the top */
-  background-color: white;
-  /* Black */
+  background: white;
   overflow-x: hidden;
-  /* Disable horizontal scroll */
 }
 
 .navbar {
@@ -581,20 +575,13 @@ footer a:hover {
 
   .sidenav {
     height: 100%;
-    /* Full-height: remove this if you want "auto" height */
     width: 300px;
-    /* Set the width of the sidebar */
     position: fixed;
-    /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1;
-    /* Stay on top */
     top: 0;
-    /* Stay at the top */
     left: 0;
     background-color: white;
-    /* Black */
     overflow-x: hidden;
-    /* Disable horizontal scroll */
     padding-top: 300px;
   }
 
@@ -635,4 +622,9 @@ footer a:hover {
     padding-left: 0;
     padding-right: 60px;
   }
+
+  .clients {
+    height: 100vh;
+  }
+
 }

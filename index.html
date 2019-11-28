@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Channel Expertise</title>
+  <link rel="icon" type="image/png" href="/public/images/logo-channel.ico" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="sidenav">
+    <nav class="navbar  navbar-expand-sm navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="maritime.html">Expertise Maritime</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="industry.html">Expertise Industriel</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+  <div class="landing-container" id="landing">
+    <div id="logo">
+      <img src="/images/logo.png" alt="channel" data-aos="fade-up" data-aos-anchor-placement="top-bottom" />
+      <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        CHANNEL <br />
+        EXPERTISE
+      </h1>
+    </div>
+  </div>
+
+  <div class="about-heading">
+    <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      GESTION DE SINISTRES ET DE CONTENTIEUX
+    </h1>
+    <h2>Expertise - Assistance - Conceil</h2>
+  </div>
+  <div class="about-container">
+    <p>
+      Depuis plus de dix ans, notre équipe d'éxperts et de conseils, est au
+      service de :
+    </p>
+  </div>
+  <div class="clients-list">
+    <div id="list-1">
+      Assureurs responsabilité civile / Assureurs marchandises transportées /
+      P&I clubs / Assureurs coque et marchandises / Assureurs navires de pêche
+      / Courtiers / Armateurs, affréteurs, chargeurs / Manutentionnaires /
+      Industriels (mécanique et froid) / Tribunaux / Consulats Autorités
+      portuaires
+    </div>
+  </div>
+
+  <div class="clients-heading">
+    <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      NOS CLIENTS
+    </h1>
+  </div>
+  <div class="clients">
+    <img src="/images/Logo_Helvetia_(assurance).svg.png" alt="" />
+    <img src="/images/p-o-ferries-logo.png" alt="" />
+    <img src="/images/Logo_Helvetia_(assurance).svg.png" alt="" />
+    <img src="/images/shipowners-club-logo-PRINT.png" alt="" />
+    <img src="/images/Logo_Helvetia_(assurance).svg.png" alt="" />
+    <img src="/images/p-o-ferries-logo.png" alt="" />
+  </div>
+
+  <div class="team-heading">
+    <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom">EXPERTS</h1>
+  </div>
+  <div class="team-container">
+    <div id="article1">
+      <div>
+        <img src="/images/article-image-1.jpg" alt="" />
+      </div>
+      <div class="article-text">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+          neque consequatur voluptatem aspernatur, pariatur totam aut dicta
+          ducimus debitis, praesentium ipsam ex velit impedit ea iste quisquam
+          tenetur optio enim?
+        </p>
+      </div>
+    </div>
+
+    <div id="article2">
+      <div>
+        <img src="/images/article-image-1.jpg" alt="" />
+      </div>
+      <div class="article-text">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+          neque consequatur voluptatem aspernatur, pariatur totam aut dicta
+          ducimus debitis, praesentium ipsam ex velit impedit ea iste quisquam
+          tenetur optio enim?
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-wrapper">
+    <div id="contact-heading">
+      <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        Contact
+      </h1>
+      <ul>
+        <li><a href="mailto:yannmackenna@gmail.com">Mail</a></li>
+        <li>
+          <a href="https://www.linkedin.com/company/26656962/">Linkedin</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact-container" id="contact">
+      <form action="/ajax/email" method="post" id="contact_form">
+        <div class="name">
+          <label for="name"></label>
+          <input type="text" placeholder="nom et prenom" name="name" id="name_input" required />
+        </div>
+        <div class="email">
+          <label for="email"></label>
+          <input type="email" placeholder="email" name="email" id="email_input" required />
+        </div>
+        <div class="telephone">
+          <label for="name"></label>
+          <input type="text" placeholder="portable" name="telephone" id="telephone_input" required />
+        </div>
+
+        <div class="message">
+          <label for="message"></label>
+          <textarea name="message" placeholder="message" id="message_input" cols="30" rows="5" required></textarea>
+        </div>
+
+        <div class="submit">
+          <button type="submit" id="form_button"
+            onclick="swal.fire('Merci!','We will get back to you soon', 'success')">
+            Envoyer
+          </button>
+        </div>
+      </form>
+      <!-- // End form -->
+    </div>
+  </div>
+
+  <div id="icon-up">
+    <a id="goTop" href="#landing">
+      <span><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+    </a>
+  </div>
+
+  <footer>
+    <div id="footer-media">
+      <h6>CONTACT</h6>
+      <a href="https://www.linkedin.com/company/26656962/" target="_blank">
+        LINKEDIN</a>
+      <br />
+      <a href="mailto:channelexpertise@wanadoo.fr" target="_blank">
+        channelexpertise@wanadoo.fr</a>
+      <p>TÉL: +33 660 071 642</p>
+    </div>
+
+    <div id="footer-info">
+      <h6>ADRESSE</h6>
+      <p>
+        23 Quai de la Vierge <br />
+        B.P. 37 <br />
+        62480 LE PORTEL <br />
+        FRANCE
+      </p>
+    </div>
+  </footer>
+  <div id="copyright">
+    <a target="_blank" href="https://www.kerliaava.com/">© Kerli Aava 2019</a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 500,
+      duration: 2000
+    });
+  </script>
+  <script src="background.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.2/sweetalert2.all.min.js"></script>
+</body>
+
+</html>

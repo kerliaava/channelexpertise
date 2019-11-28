@@ -1,5 +1,6 @@
 /*GENERAL*/
 
+
 body {
   background: rgb(25, 66, 80);
   transition: all 0.5s ease;
@@ -49,10 +50,10 @@ h3 {
   font-size: 60px;
 }
 
-img {
+/*img {
   max-width: 100%;
   height: auto;
-}
+}*/
 
 /* SIDE-BAR-MENU*/
 
@@ -230,8 +231,13 @@ img {
 
 
 #logo {
+  height: 200px;
   text-align: center;
-  padding-left: 10px;
+}
+
+#logo img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 

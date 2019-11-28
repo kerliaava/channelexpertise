@@ -22,7 +22,7 @@ li {
   list-style: none;
 }
 
-h1 {
+h2 {
   text-transform: uppercase;
   margin: 40px 0;
   text-align: center;
@@ -31,7 +31,16 @@ h1 {
   letter-spacing: 2px;
 }
 
-h2 {
+h1 {
+  text-transform: uppercase;
+  margin: 40px 0;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+}
+
+
+h3 {
   text-align: center;
   color: rgb(25, 66, 80);
 }
@@ -494,7 +503,7 @@ footer a:hover {
 
 /*MARITIME*/
 
-#landing-container-maritime h1 {
+#landing-container-maritime h2 {
   color: white;
 }
 
@@ -504,7 +513,7 @@ footer a:hover {
 
 /*INDUSTRY*/
 
-.industry-container h1 {
+.industry-container h2 {
   color: white;
 }
 

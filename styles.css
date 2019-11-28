@@ -79,6 +79,14 @@ img {
   margin: 0 auto;
 }
 
+#navbarSupportedContent {
+  text-align: center;
+}
+
+#navbarSupportedContent ul {
+  padding: 0;
+}
+
 /*PROGRESS BAR*/
 
 .progress-container {
@@ -211,9 +219,11 @@ img {
   font-family: "Playfair Display", serif;
 }
 
+
 #logo {
   text-align: center;
 }
+
 
 /*ABOUT*/
 

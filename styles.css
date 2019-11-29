@@ -215,11 +215,10 @@ h3 {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
 }
 
 .clients img {
-  padding: 30px;
+  padding: 40px;
   max-width: 100%;
   height: auto;
 }
@@ -622,6 +621,12 @@ footer a:hover {
 
   .landing-container {
     height: 100vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-heading h1 {
+    font-size: 50px;
   }
 }
 

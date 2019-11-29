@@ -86,25 +86,6 @@ h3 {
   z-index: 2000;
 }
 
-
-/*PROGRESS BAR*/
-.progress-container {
-  width: 1px;
-  height: 100%;
-  background: #ccc;
-  position: fixed;
-  top: 0;
-  bottom: 150px;
-  z-index: 1000;
-  margin-left: 0px;
-}
-
-.progress-bar {
-  height: 0%;
-  background: black;
-  width: 1px;
-}
-
 /*LANDING_PAGE*/
 .landing-container {
   height: 90vh;
@@ -523,6 +504,24 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
+
+  /*PROGRESS BAR*/
+  .progress-container {
+    width: 1px;
+    height: 100%;
+    background: #ccc;
+    position: fixed;
+    top: 0;
+    bottom: 150px;
+    z-index: 1000;
+    margin-left: 0px;
+  }
+
+  .progress-bar {
+    height: 0%;
+    background: black;
+    width: 1px;
+  }
 
   #logo {
     height: 200px;

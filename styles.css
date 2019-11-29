@@ -124,7 +124,7 @@ h3 {
 }
 
 #logo {
-  height: 200px;
+  height: 100px;
   text-align: center;
 }
 
@@ -523,6 +523,10 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
+
+  #logo {
+    height: 200px;
+  }
 
   .sidenav a {
     color: black;

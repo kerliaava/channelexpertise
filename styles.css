@@ -1,4 +1,68 @@
 /*GENERAL*/
+
+/* The sidebar menu */
+
+.sidepanel {
+  height: 100%;
+  /* Specify a height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: white;
+
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 40px;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  opacity: 0.7;
+}
+
+
 body {
   background: rgb(25, 66, 80);
   transition: all 0.5s ease;
@@ -44,47 +108,18 @@ h3 {
 }
 
 /* SIDE-BAR-MENU*/
-.sidenav {
-  width: 100%;
-  background: transparent;
-  overflow-x: hidden;
-  z-index: 2000;
-}
 
-.navbar {
-  background: transparent !important;
-  z-index: 2000;
-}
-
-.sidenav a {
-  padding: 10px 8px 6px 1px;
+.sidepanel a {
+  padding: 20px;
   font-size: 8px;
   text-transform: uppercase;
   letter-spacing: 5px;
-  color: white;
-  z-index: 2000;
 }
 
-.sidenav ul li a:hover {
+.sidepanel ul li a:hover {
   color: rgb(25, 66, 80);
-  z-index: 2000;
 }
 
-.navbar-toggler {
-  z-index: 2000;
-  border-style: none;
-  margin: 0 auto;
-}
-
-#navbarSupportedContent {
-  text-align: center;
-  z-index: 2000;
-}
-
-#navbarSupportedContent ul {
-  padding: 0;
-  z-index: 2000;
-}
 
 /*LANDING_PAGE*/
 .landing-container {
@@ -573,6 +608,10 @@ footer a:hover {
     text-align: center;
   }
 
+  .closebtn {
+    color: transparent !important;
+  }
+
   .sidenav a {
     padding: 20px 8px 6px 16px;
     text-decoration: none;
@@ -631,7 +670,7 @@ footer a:hover {
     margin-bottom: -60px;
   }
 
-  .sidenav {
+  .sidepanel {
     height: 100%;
     width: 300px;
     position: fixed;
@@ -643,11 +682,11 @@ footer a:hover {
     padding-top: 300px;
   }
 
-  .sidenav ul {
+  .sidepanel ul {
     padding-left: 0px;
   }
 
-  .sidenav li {
+  .sidepanel li {
     text-decoration: none;
     font-size: 10px;
     display: block;
@@ -655,7 +694,7 @@ footer a:hover {
     letter-spacing: 5px;
   }
 
-  .sidenav a:hover {
+  .sidepanel a:hover {
     color: rgb(196, 94, 57);
   }
 

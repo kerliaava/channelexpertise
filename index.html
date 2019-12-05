@@ -15,29 +15,13 @@
 </head>
 
 <body>
-  <div class="sidenav">
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Acceuil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="maritime.html">Expertise Maritime</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="industry.html">Expertise Industriel</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Acceuil</a>
+    <a href="maritime.html">Expertise Maritime</a>
+    <a href="industry.html">Expertise Industriel</a>
   </div>
+  <button class="openbtn" onclick="openNav()">&#9776; </button>
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
   </div>
@@ -203,6 +187,16 @@
       offset: 500,
       duration: 2000
     });
+
+    /* Set the width of the sidebar to 250px (show it) */
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "300px";
+    }
+
+    /* Set the width of the sidebar to 0 (hide it) */
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
   </script>
   <script src="background.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.2/sweetalert2.all.min.js"></script>

@@ -15,191 +15,151 @@
 </head>
 
 <body>
-  <div id="mySidepanel" class="sidepanel">
+  <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">Acceuil</a>
-    <a href="maritime.html">Expertise Maritime</a>
-    <a href="industry.html">Expertise Industriel</a>
-  </div>
-  <button class="openbtn" onclick="openNav()">&#9776; </button>
-  <div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
-  </div>
-
-  <div class="landing-container" id="landing">
-    <div id="logo">
-      <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="/images/Copie de Copie de Sans titre.png"
-        alt="channel" data-aos="fade-up" data-aos-anchor-placement="top-bottom" />
+    <div class="overlay-content">
+      <a href="index.html">Acceuil</a>
+      <a href="maritime.html">Expertise Maritime</a>
+      <a href="industry.html">Expertise Industriel</a>
     </div>
   </div>
-  <div class="about-heading">
-    <h1 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-      GESTION DE SINISTRES ET DE CONTENTIEUX
-    </h1>
-    <h3>Expertise - Assistance - Conceil</h3>
-  </div>
-  <div class="about-container">
-    <p>
-      Depuis plus de dix ans, notre équipe d'éxperts et de conseils, est au
-      service de :
-    </p>
-  </div>
-  <div class="clients-list">
-    <div id="list-1">
-      Assureurs responsabilité civile / Assureurs marchandises transportées /
-      P&I clubs / Assureurs coque et marchandises / Assureurs navires de pêche
-      / Courtiers / Armateurs, affréteurs, chargeurs / Manutentionnaires /
-      Industriels (mécanique et froid) / Tribunaux / Consulats Autorités
-      portuaires
-    </div>
-  </div>
-
-  <div class="clients-heading">
-    <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-      NOS CLIENTS
-    </h2>
-  </div>
-  <div class="clients">
-    <img src="/images/Logo_Helvetia_(assurance).svg.png" alt="" />
-    <img src="/images/p-o-ferries-logo.png" alt="" />
-    <img src="/images/Logo_Helvetia_(assurance).svg.png" alt="" />
-    <img src="/images/shipowners-club-logo-PRINT.png" alt="" />
-    <img src="/images/Logo_Helvetia_(assurance).svg.png" alt="" />
-    <img src="/images/p-o-ferries-logo.png" alt="" />
-  </div>
-
-  <div class="team-heading">
-    <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">EXPERTS</h2>
-  </div>
-  <div class="team-container">
-    <div id="article1">
-      <div>
-        <img src="/images/article-image-1.jpg" alt="" />
-      </div>
-      <div class="article-text">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-          neque consequatur voluptatem aspernatur, pariatur totam aut dicta
-          ducimus debitis, praesentium ipsam ex velit impedit ea iste quisquam
-          tenetur optio enim?
-        </p>
+  <span style="font-size:40px;cursor:pointer;margin: 30px; color: white;" onclick="openNav()">&#9776;</span>
+  <main class="content">
+    <div class="landing-container" id="landing">
+      <div class="title">
+        <h1>Channel<br />Expertise</h1>
       </div>
     </div>
 
-    <div id="article2">
-      <div>
-        <img src="/images/article-image-1.jpg" alt="" />
-      </div>
-      <div class="article-text">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-          neque consequatur voluptatem aspernatur, pariatur totam aut dicta
-          ducimus debitis, praesentium ipsam ex velit impedit ea iste quisquam
-          tenetur optio enim?
-        </p>
-      </div>
-    </div>
-  </div>
 
-  <div class="contact-wrapper">
-    <div id="contact-heading">
+    <div class="about-heading">
+      <h1 class="ml3">
+        GESTION DE SINISTRES ET DE CONTENTIEUX
+      </h1>
+      <h3>Expertise - Assistance - Conceil</h3>
+    </div>
+
+
+    <div class="clients-heading">
       <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        Contact
+        NOS CLIENTS
       </h2>
-      <ul>
-        <li><a target="_blank" href="mailto:yannmackenna@gmail.com">Mail</a></li>
-        <li>
-          <a target="_blank" href="https://www.linkedin.com/company/26656962/">Linkedin</a>
-        </li>
-      </ul>
+    </div>
+    <div class="clients">
+      <img src="/images/Sans titre.png" alt="" />
+      <img src="/images/Sans titre.png" alt="" />
+      <img src="/images/Sans titre.png" alt="" />
+      <img src="/images/Sans titre.png" alt="" />
+
     </div>
 
-    <div class="contact-container" id="contact">
-      <form action="/ajax/email" method="post" id="contact_form">
-        <div class="name">
-          <label for="name"></label>
-          <input type="text" placeholder="nom et prenom" name="name" id="name_input" required />
-        </div>
-        <div class="email">
-          <label for="email"></label>
-          <input type="email" placeholder="email" name="email" id="email_input" required />
-        </div>
-        <div class="telephone">
-          <label for="name"></label>
-          <input type="text" placeholder="portable" name="telephone" id="telephone_input" required />
-        </div>
-
-        <div class="message">
-          <label for="message"></label>
-          <textarea name="message" placeholder="message" id="message_input" cols="30" rows="5" required></textarea>
-        </div>
-
-        <div class="submit">
-          <button type="submit" id="form_button"
-            onclick="swal.fire('Merci!','We will get back to you soon', 'success')">
-            Envoyer
-          </button>
-        </div>
-      </form>
+    <div class="team-heading">
+      <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">EXPERTS</h2>
     </div>
-  </div>
+    <div class="team-container">
+      <div id="article1">
+        <div>
+          <img src="/images/article-image-1.jpg" alt="" />
+        </div>
+        <div class="article-text">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+            neque consequatur voluptatem aspernatur, pariatur totam aut dicta
+            ducimus debitis, praesentium ipsam ex velit impedit ea iste quisquam
+            tenetur optio enim?
+          </p>
+        </div>
+      </div>
 
-  <div id="icon-up">
-    <a id="goTop" href="#landing">
-      <span><i class="fa fa-angle-up" aria-hidden="true"></i></span>
-    </a>
-  </div>
-
-  <footer>
-    <div id="footer-media">
-      <h6>CONTACT</h6>
-      <a href="https://www.linkedin.com/company/26656962/" target="_blank">
-        LINKEDIN</a>
-      <br />
-      <a href="mailto:channelexpertise@wanadoo.fr" target="_blank">
-        channelexpertise@wanadoo.fr</a>
-      <p>TÉL: +33 660 071 642</p>
+      <div id="article2">
+        <div>
+          <img src="/images/article-image-1.jpg" alt="" />
+        </div>
+        <div class="article-text">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+            neque consequatur voluptatem aspernatur, pariatur totam aut dicta
+            ducimus debitis, praesentium ipsam ex velit impedit ea iste quisquam
+            tenetur optio enim?
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div id="footer-info">
-      <h6>ADRESSE</h6>
-      <p>
-        23 Quai de la Vierge <br />
-        B.P. 37 <br />
-        62480 LE PORTEL <br />
-        FRANCE
-      </p>
+    <div class="contact-wrapper">
+      <div id="contact-heading">
+        <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          Contact
+        </h2>
+      </div>
+      <div id="contact-info">
+        <ul>
+          <li><a target="_blank" href="mailto:channelexpertise@wanadoo.fr">Email</a></li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/company/26656962/">Linkedin</a>
+          </li>
+          <li>
+            <p> +33 660 071 642</p>
+          </li>
+        </ul>
+      </div>
     </div>
-  </footer>
-  <div id="copyright">
-    <a target="_blank" href="https://www.kerliaava.com/">© Kerli Aava 2019</a>
-  </div>
+    <div id="icon-up">
+      <a id="goTop" href="#landing">
+        <span><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+      </a>
+    </div>
+    <footer>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script src="script.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset: 500,
-      duration: 2000
-    });
+      <a href="">Mentions légales</a>
+    </footer>
+    <div id="copyright">
+      <a target="_blank" href="https://www.kerliaava.com/">© Kerli Aava 2019</a>
+    </div>
 
-    /* Set the width of the sidebar to 250px (show it) */
-    function openNav() {
-      document.getElementById("mySidepanel").style.width = "300px";
-    }
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      AOS.init({
+        offset: 500,
+        duration: 2000
+      });
 
-    /* Set the width of the sidebar to 0 (hide it) */
-    function closeNav() {
-      document.getElementById("mySidepanel").style.width = "0";
-    }
-  </script>
-  <script src="background.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.2/sweetalert2.all.min.js"></script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      };
+
+      var textWrapper = document.querySelector('.ml3');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+      anime.timeline({
+          loop: true
+        })
+        .add({
+          targets: '.ml3 .letter',
+          opacity: [0, 1],
+          easing: "easeInOutQuad",
+          duration: 2250,
+          delay: (el, i) => 150 * (i + 1)
+        }).add({
+          targets: '.ml3',
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });
+    </script>
+    <script src="background.js"></script>
 </body>
 
 </html>

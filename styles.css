@@ -1,70 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+.title {
+  font-family: "Montserrat";
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 1px;
+}
+
+h1 {
+  background-image: url(https://media.giphy.com/media/26tPdL0Drj1FWSIjC/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 120px;
+  line-height: .75;
+  margin: 10px 0;
+}
+
+/* styling my button */
+
+.white-mode {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #122;
+  border-radius: 3px;
+  color: #FFF;
+  transition: .35s ease-in-out;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-family: "Montserrat";
+}
+
+.white-mode:hover {
+  background-color: #FFF;
+  color: #122;
+}
+
+
+
 /*GENERAL*/
 
-/* The sidebar menu */
-
-.sidepanel {
-  height: 100%;
-  /* Specify a height */
-  width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: white;
-
-  /* Black*/
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidepanel */
-}
-
-/* The sidepanel links */
-.sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidepanel a:hover {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style the button that is used to open the sidepanel */
-.openbtn {
-  font-size: 40px;
-  cursor: pointer;
-  background: transparent;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  opacity: 0.7;
-}
-
-
 body {
-  background: rgb(25, 66, 80);
+  background: black;
   transition: all 0.5s ease;
   font-family: "Raleway", sans-serif;
   letter-spacing: 3px;
@@ -85,13 +71,7 @@ li {
   list-style: none;
 }
 
-h1 {
-  text-transform: uppercase;
-  margin: 40px 0;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  letter-spacing: 2px;
-}
+
 
 h2 {
   text-transform: uppercase;
@@ -107,17 +87,66 @@ h3 {
   color: rgb(25, 66, 80);
 }
 
-/* SIDE-BAR-MENU*/
 
-.sidepanel a {
-  padding: 20px;
-  font-size: 8px;
+/*EFFECTS*/
+.bg-active {
+  background-color: rgb(253, 253, 253);
+}
+
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+
+}
+
+
+
+
+
+/*NAVIGATION*/
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  display: block;
+  transition: 0.3s;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
-.sidepanel ul li a:hover {
-  color: rgb(25, 66, 80);
+.overlay a:hover,
+.overlay a:focus {
+  color: rgb(46, 109, 125) !important;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 45px;
 }
 
 
@@ -130,25 +159,7 @@ h3 {
   z-index: -1;
 }
 
-#logo h1 {
-  color: white;
-  font-size: 30px;
-  letter-spacing: 15px;
-  margin-top: 10px;
-  font-family: "Playfair Display", serif;
-  text-align: center;
-}
 
-#logo {
-  height: 200px;
-  text-align: center;
-  padding-bottom: 56px;
-}
-
-#logo img {
-  max-width: 100%;
-  max-height: 100%;
-}
 
 /*ABOUT*/
 .about-container {
@@ -161,6 +172,11 @@ h3 {
 }
 
 .about-heading {
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: grid;
   align-items: center;
   padding: 0 20px;
@@ -169,11 +185,16 @@ h3 {
 .about-heading h1 {
   font-size: 60px;
   font-family: "Oswald", sans-serif;
+  color: black;
 }
 
 .about-heading h2 {
   font-size: 20px;
-  color: rgb(25, 66, 80);
+  color: black;
+}
+
+.about-heading h3 {
+  color: black;
 }
 
 #list-1 {
@@ -193,21 +214,22 @@ h3 {
 
 .clients-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   margin-bottom: 60px;
   text-align: center;
 }
 
 .clients {
   display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .clients img {
   padding: 40px;
-  max-width: 100%;
-  height: auto;
+
+
 }
 
 /*TEAM*/
@@ -239,12 +261,17 @@ h3 {
 }
 
 .article-text {
-  padding: 20px;
   font-size: 11px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-article p {
+
+.article-text p {
   color: black;
+  font-size: 13px;
 }
 
 .team-container img {
@@ -252,15 +279,6 @@ article p {
   height: auto;
 }
 
-.overlay {
-  background-color: rgba(255, 255, 255, 0.5);
-  height: 100%;
-  width: 190px;
-  border-radius: 10px 0 0 10px;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 10px;
-}
 
 small {
   font-size: 13px;
@@ -269,22 +287,37 @@ small {
 
 /*CONTACT*/
 .contact-wrapper {
+  background: url(/images/eberhard-grossgasteiger-xC7Ho08RYF4-unsplash.jpeg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 60px 0;
+  height: 100vh;
+
 }
 
 #contact-heading {
   text-align: center;
+  display: grid;
+  align-items: center;
+}
+
+#contact-heading h2 {
+  color: black;
+  font-size: 80px;
+  font-weight: 800;
 }
 
 .contact-container {
   font-size: 12px;
 }
 
-#contact-heading ul {
-  text-align: center;
+#contact-info ul {
+  font-size: 50px;
+  font-weight: 800;
 }
 
 #contact-heading li {
@@ -294,129 +327,17 @@ small {
   font-size: 20px;
 }
 
-#contact-heading li a {
-  color: grey;
+.contact-wrapper li a,
+p {
+  color: black;
+
 }
 
-#contact-heading li a:hover {
+.contact-wrapper li a:hover {
   text-decoration: none;
   color: rgb(46, 109, 125);
 }
 
-input {
-  line-height: normal;
-}
-
-textarea {
-  overflow: auto;
-}
-
-form {
-  padding: 37.5px;
-  margin: 10px 0;
-  text-align: center;
-}
-
-.email {
-  float: right;
-  width: 45%;
-}
-
-input[type="text"],
-[type="email"],
-select,
-textarea {
-  background: none;
-  border: none;
-  border-bottom: solid 2px #474544;
-  color: #474544;
-  font-size: 1em;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin: 0em 0 1.875em 0;
-  padding: 0 0 0.875em 0;
-  text-transform: uppercase;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-input[type="text"]:focus,
-[type="email"]:focus,
-textarea:focus {
-  outline: none;
-  padding: 0 0 0.875em 0;
-}
-
-.message {
-  float: none;
-}
-
-.name {
-  float: left;
-  width: 45%;
-}
-
-.telephone {
-  width: 100%;
-}
-
-textarea {
-  line-height: 150%;
-  height: 150px;
-  resize: none;
-  width: 100%;
-}
-
-::-webkit-input-placeholder {
-  color: #474544;
-}
-
-:-moz-placeholder {
-  color: #474544;
-  opacity: 1;
-}
-
-::-moz-placeholder {
-  color: #474544;
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
-  color: #474544;
-}
-
-#form_button {
-  background: none;
-  border: solid 2px #474544;
-  color: #474544;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Helvetica", Arial, sans-serif;
-  font-size: 0.875em;
-  font-weight: bold;
-  outline: none;
-  padding: 20px 35px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-#form_button:hover {
-  background: #474544;
-  color: #f2f3eb;
-}
 
 /*MARITIME*/
 #landing-container-maritime h2 {
@@ -463,11 +384,6 @@ textarea {
   color: white;
 }
 
-/*EFFECTS*/
-.bg-active {
-  background-color: white;
-}
-
 /*FOOTER*/
 footer {
   border-top: solid 1px black;
@@ -479,13 +395,13 @@ footer {
 }
 
 #icon-up {
-  display: grid;
   text-align: center;
+  z-index: 1;
 }
 
 .fa {
   color: rgb(46, 109, 125);
-  font-size: 60px;
+  font-size: 80px;
 }
 
 #copyright {
@@ -523,8 +439,8 @@ footer {
 footer p,
 a {
   text-decoration: none;
-
   color: black;
+
 }
 
 footer a:hover {
@@ -587,39 +503,6 @@ footer a:hover {
     font-size: 15px;
   }
 
-  /* SIDE-BAR-MENU*/
-  .sidenav {
-    height: 100%;
-    /* Full-height: remove this if you want "auto" height */
-    width: 200px;
-    /* Set the width of the sidebar */
-    position: fixed;
-    /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    /* Stay at the top */
-    left: 0px;
-    background-color: white;
-    /* Black */
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 300px;
-    text-align: center;
-  }
-
-  .closebtn {
-    color: transparent !important;
-  }
-
-  .sidenav a {
-    padding: 20px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-  }
-
   .progress-container {
     width: 1px;
     height: 100%;
@@ -627,28 +510,11 @@ footer a:hover {
     position: fixed;
     top: 0;
     z-index: 1000;
-    margin-left: 200px;
+
   }
 
   .sidenav ul {
     padding-left: 0px;
-  }
-
-  .landing-container,
-  .progress-container,
-  .about-container,
-  .team-container,
-  .contact-wrapper,
-  #landing-container-maritime,
-  .industry-container,
-  .about-heading,
-  .team-heading,
-  footer,
-  #icon-up,
-  .clients-list,
-  .clients-heading,
-  .clients {
-    margin-left: 200px;
   }
 
   .landing-container {
@@ -664,56 +530,13 @@ footer a:hover {
 
   body {
     font-size: 15px;
+
   }
 
   .clients-heading {
     margin-bottom: -60px;
   }
 
-  .sidepanel {
-    height: 100%;
-    width: 300px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: white;
-    overflow-x: hidden;
-    padding-top: 300px;
-  }
-
-  .sidepanel ul {
-    padding-left: 0px;
-  }
-
-  .sidepanel li {
-    text-decoration: none;
-    font-size: 10px;
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-  }
-
-  .sidepanel a:hover {
-    color: rgb(196, 94, 57);
-  }
-
-  .landing-container,
-  .progress-container,
-  .about-container,
-  .team-container,
-  .contact-wrapper,
-  #landing-container-maritime,
-  .industry-container,
-  .about-heading,
-  .team-heading,
-  footer,
-  #icon-up,
-  .clients-list,
-  .clients-heading,
-  .clients {
-    margin-left: 300px;
-  }
 
   form {
     padding-left: 0;

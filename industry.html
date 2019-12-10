@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat|Oswald|Raleway&display=swap"
+    rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <style>
   body {
@@ -29,30 +29,25 @@
       <a href="industry.html">Expertise Industriel</a>
     </div>
   </div>
-  <span style="font-size:40px;cursor:pointer;margin: 30px; color: white;" onclick="openNav()">&#9776;</span>
+  <span style="font-size:40px;cursor:pointer;margin: 30px; color:  rgb(235, 96, 54);" onclick="openNav()">&#9776;</span>
   <div class="industry-container">
     <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       Expertise industriel
     </h2>
   </div>
   <div class="rellax" id="rellax-content"></div>
-  <div id="icon-up">
-    <a id="goTop" href="#landing">
-      <span><i class="fa fa-angle-up" aria-hidden="true"></i></span>
-    </a>
-  </div>
-
+  <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
   <footer>
     <div id="footer-media">
       <h6>CONTACT</h6>
+      <a href="mailto:channelexpertise@wanadoo.fr" target="_blank">
+        Email</a>
+      <p>TÉL: +33 660 071 642</p>
       <a href="https://www.linkedin.com/company/26656962/" target="_blank">
         LINKEDIN</a>
       <br />
-      <a href="mailto:channelexpertise@wanadoo.fr" target="_blank">
-        channelexpertise@wanadoo.fr</a>
-      <p>TÉL: +33 660 071 642</p>
+      <a href="/legal.html">LEGAL</a>
     </div>
-
     <div id="footer-info">
       <h6>ADRESSE</h6>
       <p>
@@ -64,7 +59,7 @@
     </div>
   </footer>
   <div id="copyright">
-    <a target="_blank" href="https://www.kerliaava.com/">© Kerli Aava 2019</a>
+    <a target="_blank" href="https://www.kerliaava.com/">© Kerli Aava 2019</a> <br>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -72,8 +67,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script src="script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script>
     AOS.init({
       offset: 500,
@@ -88,7 +83,7 @@
       document.getElementById("myNav").style.width = "0%";
     };
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.2/sweetalert2.all.min.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

@@ -250,6 +250,7 @@ h1 {}
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0 auto;
+
 }
 
 #client-list {
@@ -261,7 +262,7 @@ h1 {}
   align-items: center;
   line-height: 2.5;
   font-family: 'Bebas Neue', sans-serif;
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #list-1 {

@@ -28,15 +28,34 @@
       <div></div>
     </div>
   </div>
-  <div id="navbar">
-    <div id="logo">
-      <h1>Channel Expertise</h1>
-    </div>
-    <div id="nav-items">
-      <a href="index.html">Acceuil</a>
-      <a href="maritime.html">Expertise Maritime</a>
-      <a href="industry.html">Expertise Industriel</a>
-    </div>
+  <div id="navbar-container">
+
+    <h1>Channel Expertise</h1>
+
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/maritime.html">Expertise Maritime</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/industry.html">Expertise Industriel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
   <div class="full-screen-photo">
 
@@ -146,6 +165,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script>

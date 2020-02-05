@@ -252,6 +252,7 @@ h1 {}
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0 auto;
+  text-align: center;
 
 }
 
@@ -265,18 +266,21 @@ h1 {}
   line-height: 2.5;
   font-family: 'Bebas Neue', sans-serif;
   margin-bottom: 50px;
+  margin-top: 30px;
+
 }
 
 #list-1 {
   font-weight: bold;
   margin: 0 auto;
-  width: 400px;
+  color: rgb(38, 57, 55);
 }
+
 
 #list-2 {
   font-weight: bold;
   margin: 0 auto;
-  width: 400px;
+  color: rgb(38, 57, 55);
 }
 
 /*TEAM*/

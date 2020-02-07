@@ -221,9 +221,9 @@ li {
 h2 {
   text-transform: uppercase;
   text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 70px;
-  letter-spacing: 2px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 40px;
+  letter-spacing: 5px;
   margin: 60px 30px;
 }
 
@@ -424,7 +424,7 @@ h2 {
 
 #landing-container-maritime {
   background-image: url(/images/tobias-van-schneider-44t1AZNIMIE-unsplash.jpg);
-  height: 100vh;
+  height: 80vh;
   justify-content: center;
   align-items: center;
   display: grid;
@@ -438,7 +438,7 @@ h2 {
 /*INDUSTRY*/
 .industry-container {
   background-image: url(/images/ant-rozetsky-SLIFI67jv5k-unsplash.jpeg);
-  height: 100vh;
+  height: 80vh;
   justify-content: center;
   align-items: center;
   display: grid;

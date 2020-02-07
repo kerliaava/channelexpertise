@@ -142,6 +142,15 @@
 }
 
 
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 102, 203);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-12-512.png");
+}
+
+
 
 /*FULL-SCREEN-PHOTO*/
 .full-screen-photo {
@@ -433,8 +442,6 @@ h2 {
   justify-content: center;
   align-items: center;
   display: grid;
-  height: 100vh;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -451,15 +458,12 @@ h2 {
   align-items: center;
   display: grid;
   grid-template-columns: 1;
-  height: 100vh;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-
 }
 
 .industry-container h2 {
@@ -551,6 +555,38 @@ footer a:hover {
     background-attachment: fixed;
   }
 
+  #landing-container-maritime {
+    background-attachment: fixed;
+
+  }
+
+  .industry-container {
+    background-attachment: fixed;
+  }
+
+}
+
+@media (max-width: 415px) {
+
+  #logo-header {
+    font-size: 15px;
+  }
+
+  #call-to-action h1 {
+    font-size: 25px;
+  }
+
+  .full-screen-photo {
+    height: 100vh;
+  }
+
+  #landing-container-maritime {
+    height: 100vh;
+  }
+
+  .industry-container {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 767px) {
@@ -561,12 +597,15 @@ footer a:hover {
 
   .navbar-collapse {
     height: 100vh !important;
-    transition: 0.5s;
+    transition: 0.5s !important;
+    opacity: 0.7 !important;
+    text-align: center !important;
+    padding-top: 50% !important;
   }
 
 
   #navbar-container h1 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 900;
     text-align: right;
     margin-bottom: -40px;
@@ -625,8 +664,6 @@ footer a:hover {
 
   #list-1 {
     width: 301.58px;
-
-
   }
 
   #list-2 {
@@ -659,4 +696,5 @@ footer a:hover {
   .about-heading {
     height: 100vh;
   }
+
 }

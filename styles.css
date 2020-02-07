@@ -151,13 +151,9 @@
   align-items: center;
   margin: 0px;
   height: 80vh;
-  background-attachment: local;
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 40px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -561,6 +557,8 @@ footer a:hover {
     height: 100vh !important;
     transition: 0.5s;
   }
+
+
 
 
 

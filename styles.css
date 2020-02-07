@@ -221,9 +221,9 @@ li {
 h2 {
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 40px;
-  letter-spacing: 5px;
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  letter-spacing: 2px;
   margin: 60px 30px;
 }
 
@@ -416,6 +416,9 @@ h2 {
 /*MARITIME*/
 #landing-container-maritime h2 {
   color: white;
+  letter-spacing: 5px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 40px;
 }
 
 #rellax-content {
@@ -453,7 +456,12 @@ h2 {
 
 .industry-container h2 {
   color: white;
+  letter-spacing: 5px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 40px;
 }
+
+
 
 /*LEGAL*/
 #content-legal {

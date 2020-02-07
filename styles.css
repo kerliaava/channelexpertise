@@ -546,6 +546,12 @@ footer a:hover {
 
 /*MEDIA QUERIES*/
 
+@media (min-width: 415px) {
+  .full-screen-photo {
+    background-attachment: fixed;
+  }
+
+}
 
 @media (max-width: 767px) {
 
@@ -557,9 +563,6 @@ footer a:hover {
     height: 100vh !important;
     transition: 0.5s;
   }
-
-
-
 
 
   #navbar-container h1 {
@@ -643,8 +646,6 @@ footer a:hover {
   footer h6 {
     font-size: 15px;
   }
-
-
 }
 
 
@@ -658,5 +659,4 @@ footer a:hover {
   .about-heading {
     height: 100vh;
   }
-
 }

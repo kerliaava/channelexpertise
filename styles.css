@@ -147,6 +147,8 @@
 .full-screen-photo {
   background-image: url(/images/oscar-keys-10sTDZAj5sA-unsplash.jpg);
   display: grid;
+  justify-content: center;
+  align-items: center;
   margin: 0px;
   height: 80vh;
   background-attachment: fixed;
@@ -154,6 +156,40 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 40px;
+}
+
+#call-to-action {
+  margin: 0 30px;
+}
+
+#call-to-action h1 {
+  color: white;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#call-to-action a {
+  color: white;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border: solid 1px white;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+#call-to-action a:hover {
+  color: rgb(235, 96, 54);
+
+}
+
+
+
+#call-to-action {
+  text-align: center;
 }
 
 
@@ -495,7 +531,7 @@ footer a:hover {
 /*MEDIA QUERIES*/
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .navbar-toggler {
     margin: 0px !important;
@@ -596,8 +632,9 @@ footer a:hover {
 
 @media (min-width: 1100px) {
 
-  .client-list {
-    height: 50vh;
+  #client-list {
+    margin-bottom: 150px;
+    margin-top: 70px;
   }
 
   .about-heading {

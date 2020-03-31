@@ -376,6 +376,8 @@ h2 {
 .team-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  justify-content: center;
+  align-items: centre;
   grid-gap: 1rem;
   margin-bottom: 60px;
 }

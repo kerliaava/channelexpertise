@@ -15,21 +15,19 @@
   <link rel="stylesheet" href="styles.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 <style>
   body {
-    background: white;
+    background-color: white;
   }
 </style>
 
 <body>
   <div id="navbar-container">
-
     <h1>Channel Expertise</h1>
-
     <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,11 +36,11 @@
             <a class="nav-link" href="/index.html">Acceuil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/maritime.html">Expertise Maritime</a>
+            <a class="nav-link" href="/pages/maritime.html">Expertise Maritime</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="/industry.html">Expertise Industriel</a>
+            <a class="nav-link" href="/pages/industry.html">Expertise Industriel</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#footer-media">Contact</a>
@@ -51,14 +49,13 @@
       </div>
     </nav>
   </div>
-  <div class="rellax" id="landing-container-maritime">
+  <div class="industry-container">
     <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-      Expertise Maritime
+      Expertise industriel
     </h2>
   </div>
   <div class="rellax" id="rellax-content"></div>
   <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-
   <footer>
     <div id="footer-media">
       <h6>CONTACT</h6>
@@ -68,7 +65,7 @@
       <a href="https://www.linkedin.com/company/26656962/" target="_blank">
         LINKEDIN</a>
       <br />
-      <a href="/legal.html">LEGAL</a>
+      <a href="/pages/legal.html">LEGAL</a>
     </div>
     <div id="footer-info">
       <h6>ADRESSE</h6>
@@ -83,6 +80,7 @@
   <div id="copyright">
     <a target="_blank" href="https://www.kerliaava.com/">© Kerli Aava 2019</a> <br>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
@@ -104,7 +102,7 @@
       document.getElementById("myNav").style.width = "0%";
     };
   </script>
-  <script src="index.js"></script>
+  <script src="/js/index.js"></script>
 </body>
 
 </html>

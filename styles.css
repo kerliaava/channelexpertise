@@ -154,7 +154,7 @@
 
 /*FULL-SCREEN-PHOTO*/
 .full-screen-photo {
-  background-image: url(/images/oscar-keys-10sTDZAj5sA-unsplash.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('/images/oscar-keys-10sTDZAj5sA-unsplash.jpg');;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -194,8 +194,9 @@
 
 #call-to-action a:hover {
   color: rgb(235, 96, 54);
-
+  border: solid 1px rgb(235, 96, 54);
 }
+
 
 
 
@@ -210,8 +211,9 @@ body {
   background: white;
   transition: all 0.5s ease;
   font-family: "Raleway", sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   height: 100%;
+  font-size: 13px;
 }
 
 a {
@@ -223,6 +225,7 @@ a {
 a:hover {
   text-decoration: none;
   color: rgb(235, 96, 54);
+  
 }
 
 li {
@@ -325,6 +328,7 @@ h2 {
 #about-us p {
   padding: 30px;
   margin-bottom: 30px;
+  line-height: 2;
 }
 
 #about-us a {
@@ -332,6 +336,10 @@ h2 {
   border-radius: 3px;
   padding: 20px;
   margin-top: 20px;
+}
+
+#about-us a:hover{
+  border: solid 1px rgb(235, 96, 54);
 }
 
 
@@ -376,6 +384,8 @@ h2 {
 .team-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  justify-content: center;
+  align-items: centre;
   grid-gap: 1rem;
   margin-bottom: 60px;
 }
@@ -403,11 +413,13 @@ h2 {
   font-size: 11px;
   text-align: center;
   display: block;
+ 
 }
 
 .article-text p {
   color: black;
   font-size: 13px;
+  margin: 3em;
 }
 
 .article-text h3 {

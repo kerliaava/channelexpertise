@@ -167,7 +167,6 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 #call-to-action {
@@ -564,7 +563,9 @@ footer a:hover {
 /*MEDIA QUERIES*/
 
 @media (min-width: 415px) {
- 
+  .full-screen-photo {
+    background-attachment: fixed;
+  }
 
   #landing-container-maritime {
     background-attachment: fixed;

@@ -154,7 +154,7 @@
 
 /*FULL-SCREEN-PHOTO*/
 .full-screen-photo {
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('/images/oscar-keys-10sTDZAj5sA-unsplash.jpg');;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('/images/oscar-keys-10sTDZAj5sA-unsplash.jpg');
   display: grid;
   justify-content: center;
   align-items: center;
@@ -167,6 +167,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #call-to-action {
@@ -563,9 +564,7 @@ footer a:hover {
 /*MEDIA QUERIES*/
 
 @media (min-width: 415px) {
-  .full-screen-photo {
-    background-attachment: fixed;
-  }
+ 
 
   #landing-container-maritime {
     background-attachment: fixed;
